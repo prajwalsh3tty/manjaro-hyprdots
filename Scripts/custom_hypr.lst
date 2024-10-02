@@ -19,6 +19,7 @@
 #-----
 
 
+
 pavucontrol                                            # pulseaudio volume control
 pamixer                                                # pulseaudio cli mixer
 networkmanager                                         # network manager
