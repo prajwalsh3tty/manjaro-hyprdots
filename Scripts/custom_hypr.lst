@@ -1,17 +1,37 @@
 # --------------------------------------------------- // System
-pipewire                                               # audio/video server
-pipewire-alsa                                          # pipewire alsa client
-pipewire-audio                                         # pipewire audio client
-pipewire-jack                                          # pipewire jack client
-pipewire-pulse                                         # pipewire pulseaudio client
-gst-plugin-pipewire                                    # pipewire gstreamer client
-wireplumber                                            # pipewire session manager
+#pipewire                                               # audio/video server
+#pipewire-alsa                                          # pipewire alsa client
+#pipewire-audio                                         # pipewire audio client
+#pipewire-jack                                          # pipewire jack client
+#pipewire-pulse                                         # pipewire pulseaudio client
+#gst-plugin-pipewire                                    # pipewire gstreamer client
+#wireplumber   
+// revert to pulseaudio
+#pulseaudio 17.0-3
+#pulseaudio-alsa 1:1.2.12-3
+#pulseaudio-bluetooth 17.0-3
+#pulseaudio-qt 1.5.0-1
+#lib32-libpulse 17.0-1
+#libpulse 17.0-3                                         # pipewire session manager
+#manjaro-pulse 20240817-1
+#lib32-jack2 1.9.22-1
+#jack2 1.9.22-1
+#-----
+
+
 pavucontrol                                            # pulseaudio volume control
 pamixer                                                # pulseaudio cli mixer
 networkmanager                                         # network manager
 network-manager-applet                                 # network manager system tray utility
-bluez                                                  # bluetooth protocol stack
-bluez-utils                                            # bluetooth utility cli
+#bluez                                                  # bluetooth protocol stack
+#bluez-utils           
+                                       # bluetooth utility cli
+// revert to bluez 5.58
+#bluez 5.58-1
+#bluez-libs 5.58-1
+#bluez-qt 6.5.0-1
+#bluez-utils 5.58-1
+
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
@@ -24,6 +44,8 @@ qt5-graphicaleffects                                   # for sddm theme effects
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
+#hyprland 0.42.0-1
+
 dunst                                                  # notification daemon
 rofi-wayland                                           # application launcher
 waybar                                                 # system bar
@@ -77,3 +99,13 @@ pokemon-colorscripts-git|zsh                           # display pokemon sprites
 
 # --------------------------------------------------- // HyDE
 hyde-cli-git                                           # cli tool to manage hyde
+
+
+# ----------------------//Nvidea GPU support for manjaro
+#envycontrol 3.5.1-1
+#dkms 3.0.12-1
+#nvidia-dkms 550.107.02-1
+#nvidia-prime 1.0-5
+#nvidia-settings 550.107.02-1
+#nvidia-utils 550.107.02-1
+#v4l2loopback-dkms 0.13.2-1
